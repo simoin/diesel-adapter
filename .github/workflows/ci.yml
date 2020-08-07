@@ -32,7 +32,7 @@ jobs:
         run: sudo service mysql stop
 
       - name: Set Up MySQL
-        uses: mirromutth/mysql-action@v1.1
+        uses: mirromutth/mysql-actions@v1.1
         with:
           mysql version: '8.0' 
           mysql database: 'casbin' 

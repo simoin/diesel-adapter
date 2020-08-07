@@ -18,10 +18,11 @@ async-std = { version = "1.6.2", default-features = false, optional = true }
 dotenv = { version = "0.15.0", default-features = false }
 
 [features]
-default = ["postgres", "runtime-async-std"]
+default = ["sqlite", "runtime-async-std"]
 
 postgres = ["diesel/postgres"]
 mysql = ["diesel/mysql"]
+sqlite = ["diesel/sqlite"]
 
 runtime-tokio = ["casbin/runtime-tokio", "tokio/blocking", "tokio/rt-core"]
 runtime-async-std = ["casbin/runtime-async-std", "async-std/unstable"]
